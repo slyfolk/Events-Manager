@@ -1,0 +1,125 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>index2</title>
+    </head>
+    <body>
+      
+        <nav>
+        <div class="nav-wrapper black">
+         
+          <ul id="nav-mobile" class="left">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li> 
+            <li><a href="#"><i class="material-icons">search</i></a></li> 
+          </ul>
+
+          <ul id="nav-mobile" class="right">
+            <li><a href="#"><i class="material-icons left">refresh</i></a></li>
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#sign_up" class=" waves-effect modal-trigger">Sign Up</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div id="sign_up" class="modal modal-fixed-footer">
+          <div class="modal-content center">
+          <h4>Sign Up</h4>
+            <div class="container center" style="width: 80%">
+              <form>
+                <div class="input-field">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="icon_prefix" type="text" class="validate">
+                  <label for="icon_prefix">First Name</label>
+                </div>
+                <div class="input-field">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="icon_prefix" type="text" class="validate">
+                  <label for="icon_prefix">Last Name</label>
+                </div>
+                <div class="input-field">
+                  <i class="material-icons prefix">phone</i>
+                  <input type="tel" class="validate" id="icon_telephone">
+                  <label class="active" for="icon_telephone">Telephone</label>
+                </div>
+                <div class="input-field">
+                  <i class="material-icons prefix">account_box</i>
+                  <input type="text" id="name">
+                  <label class="active" for="name">Username</label>
+                </div>
+                <div class="input-field">
+                  <i class="material-icons prefix">lock</i>
+                  <input type="password" id="password">
+                  <label class="active" for="password">Password</label>
+                </div> 
+                <div class="input-field">
+                  <i class="material-icons prefix">email</i>
+                  <input class="validate" type="Email" id="Email">
+                  <label class="active" for="Email">Email</label>
+                </div>
+                <button class="btn waves-effect waves-light black" type="submit" name="action">Submit
+                  <i class="material-icons right">send</i>
+                </button>
+              </form>   
+            </div>
+       
+        </div>
+      </div>
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="http://www.goegleins.com/photos/images/KendallvilleEventCenter/photos/08_Kendallville_Event_Center.jpg" alt="" class="responsive-img"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>The Lekki Coliseum (TLC) – The Imperial Hall</h3>
+          <h5 class="light grey-text text-lighten-3"><i>14 Providence street, off Admiralty Way,Lekki Phase 1</i></h5>
+        </div>
+      </li>
+      <li>
+        <img src="images/1200px-PetersenEventsCenter_at_Pitt.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Petersen Events Center</h3>
+          <h5 class="light grey-text text-lighten-3">18 Kingsway Road, Johannesburg, South-Africa - Indoor</h5>
+        </div>
+      </li>
+      <li>
+        <img src="images/bday.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Emerald Events Center</h3>
+          <h5 class="light grey-text text-lighten-3">Adebayo Doherty Rd, Lekki Phase I, Lagos, Nigeria - Outdoor Field</h5>
+        </div>
+      </li>
+      <li>
+        <img src="images/bmo-picnic.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>BMO Events Arena - Abuja</h3>
+          <h5 class="light grey-text text-lighten-3">Ramaya Royal Park,271 Ahmadu Bello Way, Wuse, Abuja, Nigeria - Event Hall</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+      
+    </body>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript">
+      $(".button-collapse").sideNav();
+        $(document).ready(function(){
+      $('.slider').slider();
+    });
+          $(document).ready(function(){
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
+    </script>
+  </body>
+</html>
