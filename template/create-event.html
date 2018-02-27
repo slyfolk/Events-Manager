@@ -1,0 +1,199 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Create Event</title>
+    </head>
+    <body>
+      <nav>
+        <div class="nav-wrapper black" style="height: 125%">
+          <a href="#" class="brand-logo center">Create Event</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>  
+          </ul>
+        </div>
+      </nav>
+      <br><br>
+      <div class="container">
+          <div class="section">  
+            <h5>Name of Event</h5>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">mode_edit</i>
+                      <input id="icon_prefix" type="text" class="validate">
+                      <label for="icon_prefix">Name</label>
+                    </div>
+                  </div>
+          </div> <!-- Section1 end-->
+
+            <div class="divider"></div><!-- Divider -->
+
+            <div class="section">
+              <h5>Type Of Event</h5>
+                 <div class="input-field col s12 m6">
+                    <select class="icons">
+                      <option value="" disabled selected>Choose an Option</option>
+                      <option value="" data-icon="images/bmo-picnic.jpg" class="left circle">Picnic</option>
+                      <option value="" data-icon="images/img1.jpg" class="left circle">Wedding</option>
+                      <option value="" data-icon="images/lekki coleseum.jpg" class="left circle">Birthday</option>
+                      <option value="" data-icon="images/img2.jpg" class="left circle">Funeral</option>
+                    </select>
+                  </div>
+            </div><!-- Section2 end-->
+
+            <div class="divider"></div><!-- Divider -->
+
+            <div class="section">
+              <h5>Location of Event</h5>
+                <div class="input-field col s12">
+                  <select>
+                    <option value="" disabled selected>Choose an Option</option>
+                    <option value="1">Abuja</option>
+                    <option value="2">Lagos</option>
+                    <option value="3">Ikeja</option>
+                    <option value="3">Kaduna</option>
+                    <option value="3">Imo</option>
+                    <option value="3">Osun</option>
+                  </select>
+                  <label>Materialize Select</label>
+                </div>
+            </div>
+
+            <div class="divider"></div><!-- Divider -->
+
+            <div class="section">
+              <h5>Number of Attendants</h5>
+                <div class="input-field col s12">
+                  <select>
+                    <option value="" disabled selected>Choose an Option</option>
+                    <option value="1">0 to 100</option>
+                    <option value="2">100 to 200</option>
+                    <option value="3">200 to 500</option>
+                    <option value="4">Above 500</option>
+                  </select>
+                  <label>Materialize Select</label>
+                </div>   
+            </div>
+
+            <div class="divider"></div><!-- Divider -->
+
+            <div class="section">
+              <h5>Number of Ushers Needed</h5>
+                <div class="input-field col s12">
+                  <select>
+                    <option value="" disabled selected>Choose an Option</option>
+                    <option value="1">None</option>
+                    <option value="2">1 to 10</option>
+                    <option value="3">10 to 20</option>
+                    <option value="4">20 to 50</option>
+                    <option value="4">Above 50</option>
+                  </select>
+                  <label>Materialize Select</label>
+                </div>   
+            </div>
+
+            <div class="divider"></div><!-- Divider -->
+
+            <div class="section">
+              <h5>Colour Combination of Event</h5>
+              <div class="input-field col s12">
+                  <select multiple>
+                    <option value="" disabled selected>Choose an Option</option>
+                    <option value="1">Blue</option>
+                    <option value="2">Green</option>
+                    <option value="3">Red</option>
+                    <option value="4">Yellow</option>
+                    <option value="5">Orange</option>
+                    <option value="6">Margenta</option>
+                    <option value="7">Torquoise</option>
+                    <option value="8">Cyan</option>
+                    <option value="9">Peach</option>
+                    <option value="10">Lilac</option>
+                  </select>
+                  <label>Materialize Select</label>
+                </div>
+            </div>
+
+            <div class="divider"></div><!-- Divider -->
+
+            <div class="section">
+              <h5>Food and Drinks</h5>
+                <p>
+                <input class="with-gap" name="group3" type="radio" id="test1" checked />
+                <label for="test1">Needed</label>
+                </p>
+                <p>
+                <input class="with-gap" name="group3" type="radio" id="test2" checked />
+                <label for="test2"> Not Needed</label>
+                </p>
+            </div>
+
+            <div class="divider"></div><!-- Divider -->
+
+            <div class="section">
+              <h5>Photography/Videography</h5>
+                <p>
+                  <input class="filled-in" type="checkbox" id="photo" checked />
+                  <label for="photo">Photography</label>
+                </p>
+                <p>
+                  <input class="filled-in" type="checkbox" id="video" checked />
+                  <label for="video">Videography</label>
+                </p>
+            </div>
+
+            <div class="section">
+              <h5>Date and Time</h5>
+              <label for="Date"><i>Date</i></label>
+              <input type="text" class="datepicker" id="Date">
+              <label for="Time"><i>Time</i></label>
+              <input type="text" class="timepicker" id="Time">
+            </div>
+       
+      </div> <!-- container close-->
+
+      <div style="height:100px"></div>
+    </body>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript">
+      $(".button-collapse").sideNav();
+
+      $(document).ready(function() {
+      $('select').material_select();
+      });
+
+      $('.timepicker').pickatime({
+    default: 'now', // Set default time: 'now', '1:30AM', '16:30'
+    fromnow: 0,       // set default time to * milliseconds from now (using with default = 'now')
+    twelvehour: false, // Use AM/PM or 24-hour format
+    donetext: 'OK', // text for done-button
+    cleartext: 'Clear', // text for clear-button
+    canceltext: 'Cancel', // Text for cancel-button
+    autoclose: false, // automatic close timepicker
+    ampmclickable: true, // make AM PM clickable
+    aftershow: function(){} //Function for after opening timepicker
+  });
+
+        $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15, // Creates a dropdown of 15 years to control year,
+    today: 'Today',
+    clear: 'Clear',
+    close: 'Ok',
+    closeOnSelect: false // Close upon selecting a date,
+  });
+    </script>
+  </body>
+</html>
